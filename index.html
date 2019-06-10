@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700|Oranienbaum|Shadows+Into+Light|Yanone+Kaffeesatz:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/klogo2.png">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="login.css">
+    <title>KOB!S | ORDER NOW!</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <header>
+      <h5>KOB!S</h5><span class="fa" id="cutlery" style="font-size: 50px; line-height: 105px; color: #c5e480;" >&#xf0f5;</span>
+      <div class="logo-div">
+        <h1>Lekki Phase 1, Oregun, Apapa, GRA-Ikeja</h1>
+        <h1>OPEN 7:30am - 9pm | Sunday - Monday</h1>
+      </div>
+      <div class="h4div">
+          <h4>ORDER NOW!</h4>
+          <h4><a href="tel:0701-380-5186"><span>&#9742;</span> 0701 380 5186</a></h4>
+      </div>
+    </header>
+    <main>
+      <!-- SECOND HEADER SOCIAL MEDIA LINKS-->
+      <div class="second-header">
+        <ul class="second-header-links">
+          <li><a href="https://www.facebook.com/KobisRestaurants/" target="_blank"><img src="img/fb4logo.png" alt="facebook icon"></a></li>
+          <li><a href="https://www.instagram.com/kobisfoods/" target="_blank"><img src="img/ig1logo.png" alt="instagram icon"></a></li>
+          <li><a href="https://twitter.com/KobisFoods" target="_blank"><img src="img/twt3logo.png" alt="twitter icon"></a></li>
+          <li><a href="#"><img src="img/kclogo.png" alt="kingschat logo"></a></li>
+        </ul>
+        <!-- SECOND HEADER - OFFERINGS-->
+        <h2>FRESH MEALS</h2>
+        <h2>QSR</h2>
+        <h2>QUICK DELIVERIES</h2>
+      </div>
+
+      <!-- BANNER SLIDE-->
+      <div class="banner-slides" id="banner-slides">
+        <div class="toggle" class="toggle-prev" id="toggle-prev"></div>
+        <div class="toggle" class="toggle-next" id="toggle-next"></div>
+        <div class="slides" id="slide5">
+          <div id="slidebox-text">
+            <h2>HOt prawn sauce</h2>
+            <p>made with the freshest of prawns, then seasoned with our secret recipe, giving that hmmmmm feeling.</p>
+          </div>
+        </div>
+        <div class="slides" id="slide4">
+          <div id="slidebox-text">
+            <h2>Yamatushi</h2>
+            <p>The Kobis Yam & Egg sauce is everything to live for, as this has been one of our favorite dishes thus far.</p>
+          </div>
+        </div>
+        <div class="slides" id="slide3">
+          <div id="slidebox-text">
+            <h2>Pottage</h2>
+            <p>Hot, Spicy, Succulent. You'd come back for more.</p>
+          </div>
+        </div>
+        <div class="slides" id="slide2">
+          <div id="slidebox-text">
+            <h2>moi-moi</h2>
+            <p>Our moimoi is made from freshly blended beans and not bean flour. Wrapped in leaves to give that special taste and flavor.</p>
+          </div>
+        </div>
+        <div class="slides" id="slide1">
+          <div id="slidebox-text">
+            <h2>Seafood Okra</h2>
+            <p>The Kobis Seafood Okra is prepared freshly for your consumption. It contains the freshest of some amazing seafoods, with finely sliced Okra.</p>
+          </div>
+        </div>
+
+        </div>
+
+      <!-- DISAPPEARING NAVIGATION BAR-->
+      <nav id="closenav">
+        <a href="#"><span onclick="toggleNav()" class="menunav" id="menuicon" style="display: none; color: green; font-size: 30px; position: fixed;  fixed; top:31px; left:34px; cursor: pointer"> &#9776;</span></a>
+        <i onclick="toggleNav()" class="fa fa-close" id="closeicon" style="font-size:20px; color:tomato; position: fixed; top:40px; left:40px; cursor: pointer"></i>
+
+        <a href="index.html"><img src="img/klogo1.png" alt="Kobis logo"></a>
+
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input id="loginPwdChange" type="password" placeholder="Enter Password" name="psw" required>
+          <!--<button type="button" onclick="changePwdView()" >Show/Hide</button>-->
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Not Interested</button>
+
+          <p>Not registered yet?</p>
+          <a href="register.html"><div class="reg-btn">Register</div></a>
+          </form>
+        </div>
+
+        <ul>
+          <li><a href="#"><span class= "fa" style="color: tomato; padding-right: 10px;">&#xf015;</span> Home</a></li>
+          <li><a href="#"><span class= "fa" style="color: tomato; padding-right: 10px;">&#9776;</span> Menu</a></li>
+          <li><a href="#"><span class= "fa" style="color: tomato; padding-right: 10px;">&#xf2bb;</span>Contact Us</a></li>
+          <li><a href="#"><span class= "fa" style="color: tomato; padding-right: 10px;">&#xf0b1;</span>Career</a></li>
+          <li><a href="#" ><span class= "fas" style="color: tomato; padding-right: 10px;" onclick="openForm()">&#xf4fc;</span>Login</a></li>
+        </ul>
+
+        <div class="kobisofferings">
+          <ul class="offerings">
+            <li>MORE FROM KOBIS</li>
+            <li><a href="#">Quick Service Restaurant</a></li>
+            <li><a href="#">Outdoor Cateering Services</a></li>
+            <li><a href="#">Corporate Canteen Services</a></li>
+          </ul>
+          <ul>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="tandc.html" target="_blank">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <section>
+          <div class="Social-Media-Logos">
+            <a href="https://www.facebook.com/KobisRestaurants/" target="_blank"><img src="img/fb4logo.png" alt="facebook icon"></a>
+          </div>
+          <div class="Social-Media-Logos">
+            <a href="https://www.instagram.com/kobisfoods/" target="_blank"><img src="img/ig1logo.png" alt="instagram icon"></a>
+          </div>
+          <div class="Social-Media-Logos">
+            <a href="https://twitter.com/KobisFoods" target="_blank"><img src="img/twt3logo.png" alt="twitter icon"></a>
+          </div>
+          <div class="Social-Media-Logos1">
+            <a href="#"><img src="img/youtubelogo.png" alt="youtube logo"></a>
+          </div>
+        </section>
+
+        <h3>Designed by @iAMKINGharry</h3>
+        <h3>All rights reserved. Copyright &#169; 2018 - 2019</h3>
+      </nav>
+
+      <!-- SPACE BETWEEN SLIDES AND CARDS-->
+      <div class="white-space"><h3>Welcome to the Kobis Experience!</h3></div>
+
+      <!-- CARD SECTIONS UNDER SLIDES-->
+      <div class="main-card-tag">
+        <div class="card-pic1" id="card-pic1-img">
+          <div class="card-pic1-text">
+            <h3>Excellent Customer Service. <br> Happy Customers.</h3>
+          </div>
+        </div>
+        <div class="card-pic2">
+          <div id="card-pic2-text">
+            <h3>Great Ambiance</h3>
+          </div>
+        </div>
+        <div class="card-pic3" id="card-pic3-img">
+          <div id="card-pic3-text">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

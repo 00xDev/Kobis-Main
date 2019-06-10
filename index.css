@@ -1,0 +1,649 @@
+*
+{
+padding: 0px;
+margin: 0px;
+text-decoration: none;
+list-style: none;
+}
+
+body
+{
+background-color: ghostwhite; lavender;
+}
+
+/*HEADER STYLING*/
+
+header
+{
+display: flex;
+flex-flow: row wrap;
+width: 100%;
+height: 120px;
+background-color: hsl(15, 50%, 100%); floralwhite; grey; hsl(16, 45%, 50%); #b21807;
+z-index: 4500;
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+}
+
+header > h5
+{
+margin-left: 150px;
+margin-right: 15px;
+padding-right: 20px;
+font-family: 'Oranienbaum', serif;
+font-size: 30px;
+font-weight: bold;
+line-height: 105px;
+color: #c5e480; white;
+text-shadow: 1px 1px 2px #b21807;
+}
+
+header > .logo-div
+{
+display: flex;
+flex-direction: column;
+align-self: center;
+align-items: center;
+justify-content: center;
+background-color:  hsl(16, 45%, 50%); green;
+margin-left: 250px;
+height: 90px;
+border: solid 1px white; green;
+border-radius: 25px;
+}
+
+header > .logo-div:hover
+{
+transform: scale(1.08);
+}
+
+header > .logo-div > h1
+{
+font-family:  'Oswald', sans-serif;
+font-size: 20px;
+padding: 0px 20px;
+font-weight: bold;
+color: white;
+line-height: 35px;
+}
+
+header > .h4div
+{
+background-color: hsl(16, 45%, 50%); green;
+margin-left: auto;
+margin-right: 60px;
+align-self: center;
+display: flex;
+flex-flow: row wrap;
+border: solid 1px white; green;
+border-radius: 25px;
+}
+
+header > .h4div > h4
+{
+font-family:  'Oswald', sans-serif;
+font-size: 20px;
+padding: 30px 30px;
+font-weight: bold;
+color: white;
+align-self: center;
+}
+
+header > .h4div >h4 > a
+{
+color: white;
+font-size: 23px;
+}
+
+header > .h4div >h4 > a:hover
+{
+border: 2px solid #ddd; #b21807;
+border-radius: 10% / 50%;
+padding: 5px 10px 10px 5px;
+}
+
+/*SECOND HEADER STYLINGS*/
+.second-header
+{
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+justify-content: flex-end;
+width: 100%;
+background: linear-gradient(45deg, #c5e480, white, hsl(16, 45%, 50%), grey);
+height: 50px;
+z-index: 4400;
+position: fixed;
+top: 120px;
+left: 0px;
+right: 0px;
+}
+
+.second-header > .second-header-links
+{
+display: flex;
+flex-direction: row;
+margin-right: auto;
+margin-left: 40px;
+padding-bottom: 5px;
+}
+
+.second-header > .second-header-links > li > a
+{
+padding-right: 20px;
+}
+
+.second-header > .second-header-links > li > a > img
+{
+width: 25px;
+border-radius: 50%;
+}
+
+.second-header > .second-header-links > li > a:hover
+{
+opacity: 0.5;
+}
+
+.second-header > .second-header-links > li > a > img:hover
+{
+transform: scale(1.1);
+}
+
+main > .second-header > h2
+{
+font-family:  'Oswald', sans-serif;
+font-size: 16px;
+font-weight: normal;
+color: white;
+margin-right: 70px;
+padding-bottom: 5px;
+text-shadow: 1px 1px 2px #111;
+}
+
+main > .second-header > h2:nth-child(4)
+{
+margin-right: 60px;
+}
+
+/*IMAGE SLIDES STYLING*/
+#banner-slides
+{
+width: 1200px;
+height: 500px;
+margin-left: 320px;
+margin-right: ;
+margin-top: 230px;
+margin-bottom: 50px;
+background-color: #fff;
+overflow: hidden;
+position: relative;
+}
+
+.toggle
+{
+
+width: 50px;
+height: 50px;
+background-color: #fff;
+border-radius: 5px;
+position: absolute;
+top: 225px;
+z-index: 3500;
+opacity: 0.5;
+cursor: pointer;
+}
+
+.toggle:hover
+{
+opacity: 0.9;
+}
+
+#toggle-prev
+{
+left: 0px;
+background-image: url(img/btn5.png);
+background-size: 80%;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+#toggle-next
+{
+left: 1150px;
+background-image: url(img/btn2.png);
+background-size: 80%;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.slides
+{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0px;
+-webkit-transition: All linear 400ms;
+-moz-transition: All linear 400ms;
+-o-transition: All linear 400ms;
+}
+
+.banner-slides > #slide5
+{
+background-image: url(img/prawnsauce.jpg);
+background-position: center ;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.banner-slides > #slide4
+{
+background-image: url(img/yamatushi.jpg);
+background-position: center ;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.banner-slides > #slide3
+{
+background-image: url(img/pottage.jpg);
+background-position: center ;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.banner-slides > #slide2
+{
+background-image: url(img/moimoi.jpg);
+background-position: center ;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.banner-slides > #slide1
+{
+background-image: url(img/seafoodokro.jpg);
+background-position: center ;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+/*IMAGE TEXT SLIDES STYLING*/
+#slidebox-text
+{
+width: 500px;
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+margin: 150px auto;
+
+}
+
+#slidebox-text > h2
+{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 50px;
+color: white;
+font-weight: bold;
+text-transform: uppercase;
+text-shadow: 3px 3px 3px #111;
+}
+
+#slidebox-text > p
+{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 25px;
+color: white;
+padding-top: 10px;
+text-shadow: 2px 2px 2px #111;
+}
+
+/* SIDE NAV STYLING*/
+nav
+{
+position: fixed;
+top: 0px;
+bottom: 0px;
+left: 0px;
+width: 300px;
+background-color: #272727;
+z-index: 5000;
+transition: all linear 200ms;
+}
+
+nav > a > img
+{
+width: 80px;
+height: 80px;
+position: relative;
+top: 40px;
+left: 180px;
+border-radius: 50%;
+}
+
+nav > ul
+{
+font-family: 'Oswald', 'Yanone Kaffeesatz', sans-serif;
+font-size: 16px;
+margin-top: 100px;
+}
+
+nav > ul > li
+{
+margin: 20px 0px 15px 40px;
+}
+
+nav > ul > li > a
+{
+color: white;
+padding: 5px 20px 5px 20px;
+}
+
+nav > ul > li > a:hover
+{
+color: tomato;
+/*background-color: #ddd;*/
+font-size: 19px;
+font-weight: lighter;
+border: solid 1px tomato;
+border-radius: 50% / 80%;
+opacity: 0.7;
+}
+
+nav > .kobisofferings
+{
+margin-top: 35px;
+margin-left: 60px;
+overflow: hidden;
+}
+
+nav > .kobisofferings > ul
+{
+padding-top: 30px;
+}
+
+nav > .kobisofferings > ul > li
+{
+font-family:  'Yanone Kaffeesatz', sans-serif;
+color: tomato; #b21807;
+font-size: 12px;
+font-weight: normal;
+padding-top: 10px;
+word-spacing: 5px;
+
+}
+
+nav > .kobisofferings > ul > li > a
+{
+color: white;
+padding:
+}
+
+nav > .kobisofferings > ul > li > a:hover
+{
+font-size: 13px;
+color: #ddd;
+opacity: 0.8;
+}
+
+
+/* LOGIN BUTTON STYLING*/
+
+
+.form-popup > .form-container > h1
+{
+text-align: center;
+text-transform: uppercase;
+text-decoration: underline;
+padding: 15px 0px 20px 0px;
+}
+
+/* The popup form - hidden by default */
+.form-popup
+{
+display: none;
+box-sizing: border-box;
+position: fixed;
+font-family: Arial, Helvetica, sans-serif;
+top: 50;
+right: 500px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 400px;
+padding: 10px;
+background-color: #ddd;
+overflow: hidden;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 370px;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: white;
+outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+background-color: #4CAF50;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+
+.form-container > a > .reg-btn
+{
+text-align: center;
+background-color: #ffffdc; #4CAF50;
+color: #4CAF50; white;
+font-weight: bold;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 40%;
+opacity: 0.8;
+float: right;
+}
+
+.form-popup > .form-container > p
+{
+width: 50%;
+text-decoration: underline;
+padding: 30px 0px 0px 0px;
+float: left;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel
+{
+background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover
+{
+opacity: 1
+}
+
+.form-container > a > .reg-btn:hover
+{
+opacity: 1
+}
+
+
+nav > section
+{
+margin-top: 40px;
+margin-left: 40px;
+overflow: hidden;
+}
+
+nav > section > .Social-Media-Logos
+{
+width: 25px;
+float: left;
+padding-left: 20px;
+}
+
+nav > section > .Social-Media-Logos a > img
+{
+width: 100%;
+border-radius: 50%;
+}
+
+nav > section > .Social-Media-Logos1
+{
+width: 40px;
+float: left;
+padding-left: 6px;
+}
+
+nav > section > .Social-Media-Logos1 a > img
+{
+width: 100%;
+border-radius: 50%;
+}
+
+nav > section > .Social-Media-Logos a:hover
+{
+opacity: 0.5;
+}
+
+nav > section > .Social-Media-Logos1 a:hover
+{
+opacity: 0.5;
+}
+
+nav > section > .Social-Media-Logos a > img:hover
+{
+transform: scale(1.1);
+border-radius: 50%;
+}
+
+nav > section > .Social-Media-Logos1 a > img:hover
+{
+transform: scale(1.1);
+border-radius: 50%;
+}
+
+nav > h3
+{
+margin: 10px 0px -10px 60px;
+font-family: 'News Cycle', sans-serif;
+font-size: 10px;
+color: white; #09A7A1;
+font-style: italic;
+}
+
+/*WHITE SPACE BETWEEN CARD & SLIDE STYLINGS*/
+.white-space
+{
+width: 100%;
+height: 250px;
+background-color: white;
+}
+
+.white-space > h3
+{
+font-family:  'Oswald', sans-serif;
+font-size: 40px;
+font-weight: normal;
+color: lightgreen;
+text-transform: uppercase;
+margin-left: 660px;
+padding-top: 180px;
+text-shadow: 1px 1px 2px #111;
+}
+
+/*CARD STYLINGS*/
+.main-card-tag
+{
+display: grid;
+grid-template-columns: 320px repeat(8, 1fr) 70px;
+grid-template-rows: 50px 200px 100px 300px 100px 300px 300px 300px 50px;
+background-color: ghostwhite;
+}
+
+.card-pic1
+{
+grid-column: 2 / 10;
+grid-row: 2 / 5;
+background-image: url("img/lifestyleimage.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.card-pic1-text
+{
+font-family:  'Oswald', sans-serif;
+font-size: 25px;
+font-weight: normal;
+color: floralwhite;
+text-transform: uppercase;
+margin-left: 130px;
+padding-top: 470px;
+text-shadow: 1px 1px 2px #111;
+}
+
+.card-pic2
+{
+grid-column: 2 / 10;
+grid-row: 6 / 9;
+background-image: url("img/kobisfront1.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#card-pic2-text
+{
+font-family:  'Oswald', sans-serif;
+font-size: 30px;
+font-weight: normal;
+color: floralwhite;
+text-transform: uppercase;
+margin-left: 160px;
+padding-top: 700px;
+text-shadow: 1px 1px 2px #111;
+}
+
+.card-pic3
+{
+grid-column: 2 / 10;
+grid-row: 8 / 10;
+}
+
+#card-pic3-img
+{
+grid-column: ;
+grid-row: ;
+background-image: url("");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#card-pic3-text
+{
+grid-column: ;
+grid-row: ;
+}
